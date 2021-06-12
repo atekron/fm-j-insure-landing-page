@@ -34,13 +34,15 @@
   >
     <div class="mx-auto w-full">
       <nav
+        id="main-nav"
         class="
           flex
           justify-between
           items-center
           font-karla font-bold
           m-8
-          max-w-screen-xl px-8
+          max-w-screen-xl
+          px-8
           mx-auto
         "
       >
@@ -72,10 +74,40 @@
             >View plans</a
           >
         </ul>
-        <button class="lg:hidden"><img src="/images/icon-hamburger.svg" alt="hamburger"></button>
+        <div id="mobile-menu" class="lg:hidden">
+          <button>
+            <img
+              id="mobile-hamburger"
+              src="/images/icon-hamburger.svg"
+              alt="hamburger"
+            />
+          </button>
+          <button class="hidden">
+            <img
+              id="mobile-close"
+              src="/images/icon-close.svg"
+              alt="close button"
+            />
+          </button>
+        </div>
       </nav>
 
-      <div class="bg-insure-violet text-insure-grey-light mb-48 lg:mb-72 relative">
+      <div
+        class="bg-insure-violet text-insure-grey-light mb-48 lg:mb-72 relative"
+      >
+        <div class="absolute bottom-0 right-0 z-10 lg:hidden">
+          <img
+            src="/images/bg-pattern-intro-right-mobile.svg"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="absolute bottom-1/3 left-0 z-10 lg:hidden">
+          <img
+            src="/images/bg-pattern-intro-left-mobile.svg"
+            aria-hidden="true"
+          />
+        </div>
+
         <div class="absolute top-0 right-0 z-10 hidden lg:block">
           <img
             src="/images/bg-pattern-intro-right-desktop.svg"
@@ -88,16 +120,44 @@
             aria-hidden="true"
           />
         </div>
-        <header class="max-w-screen-xl lg:px-8 mx-auto relative pb-24 lg:py-24 ">
+
+        <header class="max-w-screen-xl lg:px-8 mx-auto relative pb-24 lg:py-24">
           <div class="lg:hidden">
-            <img src="./images/image-intro-mobile.jpg" alt="happy people" class="w-full"/>
+            <img
+              src="./images/image-intro-mobile.jpg"
+              alt="happy people"
+              class="w-full"
+            />
           </div>
           <div class="lg:absolute lg:top-24 lg:right-0 hidden lg:block">
             <img src="./images/image-intro-desktop.jpg" alt="happy people" />
           </div>
           <div class="w-40 h-0.5 bg-insure-grey-light hidden lg:block"></div>
-          <h1 class="text-5xl lg:text-7xl text-center lg:text-left lg:w-1/2 py-20 lg:pr-24">Humanizing your insurance.</h1>
-          <p class="lg:w-1/2 mb-20 px-12 lg:px-0 lg:pr-12 font-karla text-center lg:text-left">
+          <h1
+            class="
+              text-5xl
+              lg:text-7xl
+              text-center
+              lg:text-left
+              lg:w-1/2
+              py-14
+              lg:pr-24
+            "
+          >
+            Humanizing your insurance.
+          </h1>
+          <p
+            class="
+              lg:w-1/2
+              mb-20
+              px-12
+              lg:px-0
+              lg:pr-12
+              font-karla
+              text-center
+              lg:text-left
+            "
+          >
             Get your life insurance coverage easier and faster. We blend our
             expertise and technology to help you find the plan that’s right for
             you. Ensure you and your loved ones are protected.
@@ -124,9 +184,13 @@
       </div>
 
       <div>
-        <section class="max-w-screen-xl px-8 mx-auto text-insure-violet lg:mb-48">
+        <section
+          class="max-w-screen-xl px-8 mx-auto text-insure-violet lg:mb-48"
+        >
           <div class="mx-auto lg:mx-0 w-40 h-0.5 bg-insure-violet mb-16"></div>
-          <h2 class="text-5xl lg:text-7xl text-center lg:text-left mb-24">We’re different</h2>
+          <h2 class="text-5xl lg:text-7xl text-center lg:text-left mb-24">
+            We’re different
+          </h2>
           <div class="block lg:flex justify-between">
             <article class="lg:w-1/4 mb-20 lg:mb-0 text-center lg:text-left">
               <div class="mb-12">
@@ -147,7 +211,7 @@
             <article class="lg:w-1/4 mb-20 lg:mb-0 text-center lg:text-left">
               <div class="mb-12">
                 <img
-                class="mx-auto lg:mx-0"
+                  class="mx-auto lg:mx-0"
                   src="./images/icon-affordable-prices.svg"
                   alt="Affordable Prices"
                 />
@@ -162,7 +226,11 @@
             </article>
             <article class="lg:w-1/4 mb-20 lg:mb-0 text-center lg:text-left">
               <div class="mb-12">
-                <img class="mx-auto lg:mx-0" src="./images/icon-people-first.svg" alt="People First" />
+                <img
+                  class="mx-auto lg:mx-0"
+                  src="./images/icon-people-first.svg"
+                  alt="People First"
+                />
               </div>
               <h3 class="text-2xl font-bold my-8 text-insure-violet">
                 People First
@@ -176,13 +244,13 @@
         </section>
       </div>
 
-      <div>
+      <div class="m-12 lg:m-9">
         <section
           class="
             relative
-            flex
-            justify-between
-            items-center
+            lg:flex
+            lg:justify-between
+            lg:items-center
             max-w-screen-xl
             mx-auto
             bg-insure-violet
@@ -191,18 +259,42 @@
             mb-48
           "
         >
-          <div class="absolute top-0 right-0">
+          <div class="absolute top-0 right-0 hidden lg:block">
             <img
               src="/images/bg-pattern-how-we-work-desktop.svg"
               aria-hidden="true"
+              class="h-full z-0"
             />
           </div>
-          <h2 class="text-6xl w-1/2 pr-12 mb-1">
+          <div class="absolute top-0 right-0 lg:hidden h-full">
+            <img
+              src="/images/bg-pattern-how-we-work-mobile.svg"
+              aria-hidden="true"
+              class="h-full z-0"
+            />
+          </div>
+          <h2
+            class="
+              text-5xl
+              lg:text-6xl
+              lg:w-1/2
+              lg:pr-12
+              lg:mb-1
+              text-center
+              lg:text-left
+              z-10
+            "
+          >
             Find out more about how we work
           </h2>
           <button
             class="
+              block
               border-2 border-insure-grey-light
+              my-12
+              lg:my-0
+              mx-auto
+              lg:mx-0
               p-2
               px-8
               h-12
@@ -220,7 +312,14 @@
       </div>
 
       <div class="bg-insure-grey-light p-12 relative">
-        <div>
+        <div class="lg:hidden">
+          <img
+            src="/images/bg-pattern-footer-mobile.svg"
+            aria-hidden="true"
+            class="absolute top-0 left-0 z-0 w-full"
+          />
+        </div>
+        <div class="hidden lg:block">
           <img
             src="/images/bg-pattern-footer-desktop.svg"
             aria-hidden="true"
@@ -230,7 +329,8 @@
         <footer class="max-w-screen-xl px-8 mx-auto font-karla">
           <nav
             class="
-              flex
+              block
+              lg:flex
               items-center
               my-12
               pb-12
@@ -238,29 +338,33 @@
               z-10
             "
           >
-            <div class="mr-auto">
-              <img src="./images/logo.svg" alt="logo" class="z-10" />
+            <div class="lg:mr-auto mb-12 lg:mb-0">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="block mx-auto lg-mx-0"
+              />
             </div>
-            <ul class="flex flex-row">
-              <a href="#" "
+            <ul class="flex justify-center">
+              <a href="#"
                 ><img
                   src="./images/icon-facebook.svg"
                   alt="facebook"
                   class="ml-4 cursor-pointer filter hover:brightness-50"
               /></a>
-              <a href="#" "
+              <a href="#"
                 ><img
                   src="./images/icon-pinterest.svg"
                   alt="twitter"
                   class="ml-4 cursor-pointer filter hover:brightness-50"
               /></a>
-              <a href="#" "
+              <a href="#"
                 ><img
                   src="./images/icon-pinterest.svg"
                   alt="pinterest"
                   class="ml-4 cursor-pointer filter hover:brightness-50"
               /></a>
-              <a href="#" "
+              <a href="#"
                 ><img
                   src="./images/icon-instagram.svg"
                   alt="instagram"
@@ -268,36 +372,80 @@
               /></a>
             </ul>
           </nav>
-          <section class="flex">
-            <div class="uppercase font-bold text-insure-violet mr-52">
-              <h4 class="mb-8 text-insure-blue">Our company</h4>
-              <ul class="flex flex-col">
+          <section class="block lg:flex">
+            <div
+              class="
+                uppercase
+                font-bold
+                text-insure-violet
+                lg:mr-52
+                mb-12
+                lg:mb-0
+              "
+            >
+              <h4 class="mb-8 text-insure-blue text-center lg:text-left">
+                Our company
+              </h4>
+              <ul class="flex flex-col items-center lg:items-stretch">
                 <a href="" class="hover:underline">How we work</a>
                 <a href="" class="hover:underline">Why Insure?</a>
                 <a href="" class="hover:underline">View plans</a>
                 <a href="" class="hover:underline">Reviews</a>
               </ul>
             </div>
-            <div class="uppercase font-bold text-insure-violet mr-52">
-              <h4 class="mb-8 text-insure-blue">Help me</h4>
-              <ul class="flex flex-col">
+            <div
+              class="
+                uppercase
+                font-bold
+                text-insure-violet
+                lg:mr-52
+                mb-12
+                lg:mb-0
+              "
+            >
+              <h4 class="mb-8 text-insure-blue text-center lg:text-left">
+                Help me
+              </h4>
+              <ul class="flex flex-col items-center lg:items-stretch">
                 <a href="" class="hover:underline">FAQ</a>
                 <a href="" class="hover:underline">Terms of use</a>
                 <a href="" class="hover:underline">Privacy policy</a>
                 <a href="" class="hover:underline">Cookies</a>
               </ul>
             </div>
-            <div class="uppercase font-bold text-insure-violet mr-52">
-              <h4 class="mb-8 text-insure-blue">Contact</h4>
-              <ul class="flex flex-col">
+            <div
+              class="
+                uppercase
+                font-bold
+                text-insure-violet
+                lg:mr-52
+                mb-12
+                lg:mb-0
+              "
+            >
+              <h4 class="mb-8 text-insure-blue text-center lg:text-left">
+                Contact
+              </h4>
+              <ul class="flex flex-col items-center lg:items-stretch">
                 <a href="" class="hover:underline">Sales</a>
                 <a href="" class="hover:underline">Support</a>
                 <a href="" class="hover:underline">Live chat</a>
               </ul>
             </div>
-            <div class="uppercase font-bold text-insure-violet mr-52">
-              <h4 class="mb-8 text-insure-blue">Others</h4>
-              <ul class="flex flex-col">
+            <div
+              class="
+                uppercase
+                font-bold
+                text-insure-violet
+                lg:mr-52
+                mb-12
+                lg:mb-0
+              "
+            >
+              <h4 class="mb-8 text-insure-blue text-center lg:text-left">
+                Others
+              </h4>
+              <ul class="flex flex-col items-center lg:items-stretch">
                 <a href="" class="hover:underline">Careers</a>
                 <a href="" class="hover:underline">Press</a>
                 <a href="" class="hover:underline">Licenses</a>
@@ -311,7 +459,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Michael Kret</a>.
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
