@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -25,69 +29,134 @@
       }
     </style>
   </head>
-  <body class="flex flex-col justify-between min-h-screen bg-insure">
+  <body
+    class="flex flex-col justify-between font-dm-serif font-normal min-h-screen"
+  >
     <div class="mx-auto w-full">
-      <nav class="flex justify-between m-4 max-w-screen-xl mx-auto">
-        <div><img src="./images/logo.svg" alt="logo" /></div>
-        <ul class="uppercase">
-          <a href="" class="mx-2">How we work</a>
-          <a href="" class="mx-2">Blog</a>
-          <a href="" class="mx-2">Account</a>
-          <a href="" class="p-2 mx-2 border-2 border-gray-500">View plans</a>
+      <nav
+        class="
+          flex
+          justify-between
+          font-karla font-bold
+          m-8
+          max-w-screen-xl
+          mx-auto
+        "
+      >
+        <div class="cursor-pointer">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <ul class="uppercase text-insure-gray-violet">
+          <a href="" class="mx-4 cursor-pointer hover:text-insure-dark-violet"
+            >How we work</a
+          >
+          <a href="" class="mx-4 cursor-pointer hover:text-insure-dark-violet"
+            >Blog</a
+          >
+          <a href="" class="mx-4 cursor-pointer hover:text-insure-dark-violet"
+            >Account</a
+          >
+          <a
+            href=""
+            class="
+              p-3
+              px-8
+              mx-2
+              cursor-pointer
+              border-2 border-insure-dark-violet
+              text-insure-dark-violet
+              hover:bg-insure-dark-violet
+              hover:text-insure-grey-light
+            "
+            >View plans</a
+          >
         </ul>
       </nav>
 
-      <div>
-        <header class="max-w-screen-xl mx-auto">
-          <div>
-            <img src="./images/image-intro-mobile.jpg" alt="happy people" />
+      <div class="bg-insure-violet text-insure-grey-light mb-72 relative">
+        <div class="absolute top-0 right-0 z-10">
+          <img
+            src="/images/bg-pattern-intro-right-desktop.svg"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="absolute top-96 left-0 z-10">
+          <img
+            src="/images/bg-pattern-intro-left-desktop.svg"
+            aria-hidden="true"
+          />
+        </div>
+        <header class="max-w-screen-xl mx-auto relative py-24">
+          <div class="absolute top-24 right-0">
+            <img src="./images/image-intro-desktop.jpg" alt="happy people" />
           </div>
-          <h1>Humanizing your insurance.</h1>
-          <p>
+          <div class="w-40 h-0.5 bg-insure-grey-light"></div>
+          <h1 class="text-7xl w-1/2 py-12 pr-24">Humanizing your insurance.</h1>
+          <p class="w-1/2 mb-20 pr-12 font-karla">
             Get your life insurance coverage easier and faster. We blend our
             expertise and technology to help you find the plan that’s right for
             you. Ensure you and your loved ones are protected.
           </p>
-          <button>View plans</button>
+          <button
+            class="
+              border-2 border-insure-grey-light
+              p-2
+              px-8
+              uppercase
+              font-karla font-bold
+              cursor-pointer
+              hover:bg-insure-grey-light
+              hover:text-insure-dark-violet
+            "
+          >
+            View plans
+          </button>
         </header>
       </div>
 
       <div>
-        <section class="max-w-screen-xl mx-auto">
-          <h2>We’re different</h2>
+        <section class="max-w-screen-xl mx-auto text-insure-violet mb-48">
+          <div class="w-40 h-0.5 bg-insure-violet mb-16"></div>
+          <h2 class="text-7xl mb-24">We’re different</h2>
           <div class="flex">
             <article>
-              <div>
+              <div class="mb-12">
                 <img
                   src="./images/icon-snappy-process.svg"
                   alt="Snappy Process"
                 />
               </div>
-              <h3>Snappy Process</h3>
-              <p>
+              <h3 class="text-2xl font-bold my-8 text-insure-violet">
+                Snappy Process
+              </h3>
+              <p class="font-karla pr-24">
                 Our application process can be completed in minutes, not hours.
                 Don’t get stuck filling in tedious forms.
               </p>
             </article>
             <article>
-              <div>
+              <div class="mb-12">
                 <img
                   src="./images/icon-affordable-prices.svg"
                   alt="Affordable Prices"
                 />
               </div>
-              <h3>Affordable Prices</h3>
-              <p>
+              <h3 class="text-2xl font-bold my-8 text-insure-violet">
+                Affordable Prices
+              </h3>
+              <p class="font-karla pr-24">
                 We don’t want you worrying about high monthly costs. Our prices
                 may be low, but we still offer the best coverage possible.
               </p>
             </article>
             <article>
-              <div>
+              <div class="mb-12">
                 <img src="./images/icon-people-first.svg" alt="People First" />
               </div>
-              <h3>People First</h3>
-              <p>
+              <h3 class="text-2xl font-bold my-8 text-insure-violet">
+                People First
+              </h3>
+              <p class="font-karla pr-24">
                 Our plans aren’t full of conditions and clauses to prevent
                 payouts. We make sure you’re covered when you need it.
               </p>
@@ -97,9 +166,45 @@
       </div>
 
       <div>
-        <section class="flex max-w-screen-xl mx-auto">
-          <h2>Find out more about how we work</h2>
-          <button>How we work</button>
+        <section
+          class="
+            relative
+            flex
+            justify-between
+            items-center
+            max-w-screen-xl
+            mx-auto
+            bg-insure-violet
+            text-insure-grey-light
+            p-16
+            mb-48
+          "
+        >
+          <div class="absolute top-0 right-0">
+            <img
+              src="/images/bg-pattern-how-we-work-desktop.svg"
+              aria-hidden="true"
+            />
+          </div>
+          <h2 class="text-6xl w-1/2 pr-4 mb-1">
+            Find out more about how we work
+          </h2>
+          <button
+            class="
+              border-2 border-insure-grey-light
+              p-2
+              px-8
+              h-12
+              uppercase
+              font-karla font-bold
+              cursor-pointer
+              hover:bg-insure-grey-light
+              hover:text-insure-dark-violet
+              z-10
+            "
+          >
+            How we work
+          </button>
         </section>
       </div>
 
