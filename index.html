@@ -118,8 +118,8 @@
         <section class="max-w-screen-xl mx-auto text-insure-violet mb-48">
           <div class="w-40 h-0.5 bg-insure-violet mb-16"></div>
           <h2 class="text-7xl mb-24">We’re different</h2>
-          <div class="flex">
-            <article>
+          <div class="flex justify-between">
+            <article class="w-1/4">
               <div class="mb-12">
                 <img
                   src="./images/icon-snappy-process.svg"
@@ -129,12 +129,12 @@
               <h3 class="text-2xl font-bold my-8 text-insure-violet">
                 Snappy Process
               </h3>
-              <p class="font-karla pr-24">
+              <p class="font-karla">
                 Our application process can be completed in minutes, not hours.
                 Don’t get stuck filling in tedious forms.
               </p>
             </article>
-            <article>
+            <article class="w-1/4">
               <div class="mb-12">
                 <img
                   src="./images/icon-affordable-prices.svg"
@@ -144,19 +144,19 @@
               <h3 class="text-2xl font-bold my-8 text-insure-violet">
                 Affordable Prices
               </h3>
-              <p class="font-karla pr-24">
+              <p class="font-karla">
                 We don’t want you worrying about high monthly costs. Our prices
                 may be low, but we still offer the best coverage possible.
               </p>
             </article>
-            <article>
+            <article class="w-1/4">
               <div class="mb-12">
                 <img src="./images/icon-people-first.svg" alt="People First" />
               </div>
               <h3 class="text-2xl font-bold my-8 text-insure-violet">
                 People First
               </h3>
-              <p class="font-karla pr-24">
+              <p class="font-karla">
                 Our plans aren’t full of conditions and clauses to prevent
                 payouts. We make sure you’re covered when you need it.
               </p>
@@ -186,7 +186,7 @@
               aria-hidden="true"
             />
           </div>
-          <h2 class="text-6xl w-1/2 pr-4 mb-1">
+          <h2 class="text-6xl w-1/2 pr-12 mb-1">
             Find out more about how we work
           </h2>
           <button
@@ -208,52 +208,88 @@
         </section>
       </div>
 
-      <div>
-        <footer class="max-w-screen-xl mx-auto">
-          <nav class="flex">
+      <div class="bg-insure-grey-light p-12 relative">
+        <div>
+          <img
+            src="/images/bg-pattern-footer-desktop.svg"
+            aria-hidden="true"
+            class="absolute top-0 left-0 z-0"
+          />
+        </div>
+        <footer class="max-w-screen-xl mx-auto font-karla">
+          <nav
+            class="
+              flex
+              items-center
+              my-12
+              pb-12
+              border-b-2 border-insure-blue
+              z-10
+            "
+          >
             <div class="mr-auto">
-              <img src="./images/logo.svg" alt="logo" />
+              <img src="./images/logo.svg" alt="logo" class="z-10" />
             </div>
             <ul class="flex flex-row">
-              <li><img src="./images/icon-facebook.svg" alt="facebook" /></li>
-              <li><img src="./images/icon-pinterest.svg" alt="twitter" /></li>
-              <li><img src="./images/icon-pinterest.svg" alt="pinterest" /></li>
-              <li><img src="./images/icon-instagram.svg" alt="instagram" /></li>
+              <a href="#" "
+                ><img
+                  src="./images/icon-facebook.svg"
+                  alt="facebook"
+                  class="ml-4 cursor-pointer filter hover:brightness-50"
+              /></a>
+              <a href="#" "
+                ><img
+                  src="./images/icon-pinterest.svg"
+                  alt="twitter"
+                  class="ml-4 cursor-pointer filter hover:brightness-50"
+              /></a>
+              <a href="#" "
+                ><img
+                  src="./images/icon-pinterest.svg"
+                  alt="pinterest"
+                  class="ml-4 cursor-pointer filter hover:brightness-50"
+              /></a>
+              <a href="#" "
+                ><img
+                  src="./images/icon-instagram.svg"
+                  alt="instagram"
+                  class="ml-4 cursor-pointer filter hover:brightness-50"
+              /></a>
             </ul>
           </nav>
-          <section class="flex justify-between">
-            <div>
-              <h4>Our company</h4>
+          <section class="flex">
+            <div class="uppercase font-bold text-insure-violet mr-52">
+              <h4 class="mb-8 text-insure-blue">Our company</h4>
               <ul class="flex flex-col">
-                <a href="">How we work</a>
-                <a href="">Why Insure?</a>
-                <a href="">View plans</a>
-                <a href="">Reviews</a>
+                <a href="" class="hover:underline">How we work</a>
+                <a href="" class="hover:underline">Why Insure?</a>
+                <a href="" class="hover:underline">View plans</a>
+                <a href="" class="hover:underline">Reviews</a>
               </ul>
             </div>
-            <div>
-              <h4>Help me</h4>
+            <div class="uppercase font-bold text-insure-violet mr-52">
+              <h4 class="mb-8 text-insure-blue">Help me</h4>
               <ul class="flex flex-col">
-                <a href="">FAQ</a>
-                <a href="">Terms of use</a>
-                <a href="">Privacy policy</a>
-                <a href="">Cookies</a>
+                <a href="" class="hover:underline">FAQ</a>
+                <a href="" class="hover:underline">Terms of use</a>
+                <a href="" class="hover:underline">Privacy policy</a>
+                <a href="" class="hover:underline">Cookies</a>
               </ul>
             </div>
-            <div>
-              <h4>Contact</h4>
+            <div class="uppercase font-bold text-insure-violet mr-52">
+              <h4 class="mb-8 text-insure-blue">Contact</h4>
               <ul class="flex flex-col">
-                <a href="">Sales</a>
-                <a href="">Support</a>
-                <a href="">Live chat</a>
+                <a href="" class="hover:underline">Sales</a>
+                <a href="" class="hover:underline">Support</a>
+                <a href="" class="hover:underline">Live chat</a>
               </ul>
             </div>
-            <div>
-              <h4>Others</h4>
+            <div class="uppercase font-bold text-insure-violet mr-52">
+              <h4 class="mb-8 text-insure-blue">Others</h4>
               <ul class="flex flex-col">
-                <a href="">Careers</a>
-                <a href="">Press</a>
-                <a href="">Licenses</a>
+                <a href="" class="hover:underline">Careers</a>
+                <a href="" class="hover:underline">Press</a>
+                <a href="" class="hover:underline">Licenses</a>
               </ul>
             </div>
           </section>
