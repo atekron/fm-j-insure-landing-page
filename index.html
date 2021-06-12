@@ -34,7 +34,6 @@
   >
     <div class="mx-auto w-full">
       <nav
-        id="main-nav"
         class="
           flex
           justify-between
@@ -43,13 +42,42 @@
           m-8
           max-w-screen-xl
           px-8
+          lg:px-0
           mx-auto
+          relative
+          overflow-visible
         "
       >
         <div class="cursor-pointer">
           <img src="./images/logo.svg" alt="logo" />
         </div>
-        <ul class="uppercase text-insure-gray-violet hidden lg:block">
+        <ul
+          id="main-nav"
+          class="
+            hidden
+            absolute
+            lg:relative
+            flex flex-col
+            items-center
+            justify-around
+            top-12
+            lg:top-0
+            left-0
+            w-full
+            lg:w-auto
+            h-72
+            lg:h-auto
+            mx-auto
+            lg:mx-0
+            lg:ml-auto
+            z-20
+            bg-insure-violet
+            lg:bg-white
+            text-insure-grey-light
+            lg:text-insure-gray-violet
+            lg:block
+          "
+        >
           <a href="" class="mx-4 cursor-pointer hover:text-insure-dark-violet"
             >How we work</a
           >
@@ -62,14 +90,21 @@
           <a
             href=""
             class="
+              w-8/12
+              lg:w-auto
+              text-center
               p-3
               px-8
               mx-2
               cursor-pointer
-              border-2 border-insure-dark-violet
-              text-insure-dark-violet
-              hover:bg-insure-dark-violet
-              hover:text-insure-grey-light
+              border-2 border-insure-grey-light
+              text-insure-grey-light
+              hover:bg-insure-grey-light
+              hover:text-insure-dark-violet
+              lg:border-2 lg:border-insure-dark-violet
+              lg:text-insure-dark-violet
+              lg:hover:bg-insure-dark-violet
+              lg:hover:text-insure-grey-light
             "
             >View plans</a
           >
@@ -81,12 +116,11 @@
               src="/images/icon-hamburger.svg"
               alt="hamburger"
             />
-          </button>
-          <button class="hidden">
             <img
               id="mobile-close"
               src="/images/icon-close.svg"
               alt="close button"
+              class="hidden"
             />
           </button>
         </div>
@@ -126,7 +160,7 @@
             <img
               src="./images/image-intro-mobile.jpg"
               alt="happy people"
-              class="w-full"
+              class="w-full h-auto"
             />
           </div>
           <div class="lg:absolute lg:top-24 lg:right-0 hidden lg:block">
